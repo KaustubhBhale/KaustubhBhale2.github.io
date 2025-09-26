@@ -518,6 +518,47 @@ h2::after {
             white-space: nowrap;
         }
 
+        /* Methodologies Icons */
+        .agile-icon { color: #28a745 !important; }
+        .scrum-icon { color: #17a2b8 !important; }
+        .sdlc-icon { color: #ffc107 !important; }
+
+        /* Regulatory Knowledge Icons */
+        .hipaa-icon { color: #dc3545 !important; }
+        .gdpr-icon { color: #6f42c1 !important; }
+        .privacy-icon { color: #20c997 !important; }
+
+        /* Business Skills Icons */
+        .stakeholder-icon { color: #fd7e14 !important; }
+        .communication-icon { color: #e83e8c !important; }
+        .business-icon { color: #6610f2 !important; }
+
+        /* Monitoring Tools Icons */
+        .centreon-icon { color: #6c757d !important; }
+        .controlm-icon { color: #0dcaf0 !important; }
+        .dynatrace-icon { color: #198754 !important; }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .skill-items {
+                padding-left: 0;
+                justify-content: center;
+            }
+            
+            .skill-header {
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .skill-header h3 {
+                font-size: 1.8rem;
+            }
+            
+            .skill-item {
+                font-size: 1rem;
+            }
+        }
+
         /* Programming Languages Icons */
         .python-icon { color: #3776ab !important; }
         .r-icon { color: #276DC3 !important; }
@@ -1557,8 +1598,75 @@ h2::after {
                         </div>
                     </div>
                 </div>
+                <!-- Regulatory Knowledge -->
+                <div class="skill-section">
+                    <div class="skill-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Regulatory Knowledge</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-file-medical hipaa-icon"></i>
+                            <span>HIPAA</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-gavel gdpr-icon"></i>
+                            <span>GDPR</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-user-shield privacy-icon"></i>
+                            <span>Data Privacy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Business Skills -->
+                <div class="skill-section">
+                    <div class="skill-header">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Business Skills</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-users-cog stakeholder-icon"></i>
+                            <span>Stakeholder Management</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-comments communication-icon"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line business-icon"></i>
+                            <span>Business Process Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Monitoring & Scheduling Tools -->
+                <div class="skill-section">
+                    <div class="skill-header">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Monitoring & Scheduling Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-server centreon-icon"></i>
+                            <span>Centreon</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs controlm-icon"></i>
+                            <span>Control-M</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar dynatrace-icon"></i>
+                            <span>Dynatrace</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        
     </section>
 
     <!-- Projects Section -->
